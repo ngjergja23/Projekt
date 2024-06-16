@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>My test page</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link id="css_ind" href="styles/index_style.css" rel="stylesheet">
+  <script src="JS/main.js" defer></script>
+
+</head>
+
+<body>
+  
+  <form id="my-form">
+    
+    <input id="ime" type="text" name="Ime" value="" placeholder="Ime:"><br>
+    <input id="prez" type="text" name="Prezime" value="" placeholder="Prezime:"><br><br>
+
+    <select name="Sveučilište" id="sve">
+      <option value style="display:none"> -- odaberi Sveučilište -- </option>
+      <option value="Sveučilište u Dubrovniku">Sveučilište u Dubrovniku</option>
+      <option value="Sveučilište u Osijeku">Sveučilište u Osijeku</option>
+      <option value="Sveučilište u Splitu">Sveučilište u Splitu</option>
+      <option value="Sveučilište u Zadru">Sveučilište u Zadru</option>
+      <option value="Sveučilište u Zagrebu">Sveučilište u Zagrebu</option>
+    </select>
+    
+    <br><hr><br>
+
+    <fieldset>
+      <legend class="legend">Odaberij studij:</legend>
+
+      <div>
+
+        <input type="radio" id="pd" name="studij" value="Preddiplomski" checked>
+        <label for="pd">Preddiplomski</label><br>
+
+        <input type="radio" id="d" name="studij" value="Diplomski">
+        <label for="d">Diplomski</label><br>
+
+        <input type="radio" id="dr" name="studij" value="Doktorski">
+        <label for="dr">Doktorski</label><br>
+
+      </div>
+
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend class="legend">Odaberi izborne kolegije:</legend>
+
+      <div>
+
+        <input type="checkbox" id="chess" name="izborni" value=Šah checked>
+        <label for="chess">Šah</label><br>
+
+        <input type="checkbox" id="gk" name="izborni" value="Gaming kultura">
+        <label for="gk">Gaming kultura</label><br>
+
+        <input type="checkbox" id="gt" name="izborni" value="Golf turizam">
+        <label for="gt">Golf turizam</label><br>
+
+      </div>
+
+    </fieldset><br>
+
+    <input id="sub" type="button" value="podnesi">
+
+
+  </form>
+
+</body>
+
+</html>

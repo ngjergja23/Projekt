@@ -1,0 +1,87 @@
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(64, 183, 107);
+}
+
+body {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #de9815;
+  padding: 20px 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 1px 5px 3px black;
+}
+
+p{
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+hr{
+  border-color: blueviolet;
+}
+
+
+#my-form {
+  background-color: rgb(5, 255, 217);
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 10px 15px 5px 10px;
+  margin: 20px 15px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 50%;
+  font-size: smaller;
+  padding: 10px 15px 5px 10px;
+  margin: 10px 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+fieldset {
+  border: 10px groove blueviolet;
+}
+
+#sub {
+  background-color: blueviolet;
+  font-size: medium;
+  width: 100px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+}
+
+.button_change {
+  background-color: blueviolet;
+  font-size: medium;
+  width: 100px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px 8px 12px;
+  margin: 20px;
+}

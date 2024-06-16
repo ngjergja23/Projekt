@@ -1,0 +1,38 @@
+html {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(190, 254, 213);
+}
+
+body {
+    border-radius: 4%;
+    width: 60%;
+    margin: 20px auto;
+    background-color: rgb(138, 183, 154);
+    padding: 20px 20px 20px 20px;
+    border: 5px groove rgb(221, 230, 225);
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+p {
+    font-size: 13px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+
+.button_change {
+    font-size: 16px;
+    background-color: rgb(52, 84, 113);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 4px 8px 5px 8px;
+}
