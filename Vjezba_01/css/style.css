@@ -1,0 +1,34 @@
+/* external: uvodna css datoteka, odvojena od samog html dokumenta*/
+/* internal: takoder stilovi se mogu definirat unutar head unutar style elementa koristeci selektore
+ili inline: unutar samih elemenata - inline style atribut (oboje rijetko)*/
+
+img, h1, p, a{
+    border: 0px solid rgb(79, 45, 142); 
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+#naslov{
+    font-size: larger;
+    /*text-decoration: rgb(110, 143, 110) wavy underline;
+    text-shadow: #FC0 1px 0 10px;*/
+    text-decoration: underline overline #FF3028;
+
+    color:black;
+}
+h1{
+    padding: 10px;  /* između samog sadržaja i bordera- udaljenosti do granice 
+    u veličinu elementa ulazi sve do bordera, dakle vel.sadržaja + vel.paddinga + vel.bordera
+    a margine ne!
+
+    susjedne margine se kolapsaju, dok padding ne! jer padding spada u veličinu elementa 
+    */
+}
+p{
+    padding: 20px;
+}
+div{
+    width: 20%;
+    display: inline-flex;
+}

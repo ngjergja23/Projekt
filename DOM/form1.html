@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jednostavna web forma</title>
+    <script type="text/javascript" src="form1_JS.js" defer></script>
+    <link id="cssForm" type="text/css" rel="stylesheet" href="formStyle.css">
+</head>
+
+<body>
+    <h1>Forma</h1>
+    <hr>
+    <p style="font-size:14pt"> Unesite tražene vrijednosti u formu:</p>
+    &nbsp;
+
+
+    <table>
+        <tr>
+            <th>Username: </th>
+            <th><input title="Please enter user name..." id="usr_nameField" type="text" value=""></th>
+        </tr>
+        <tr>
+            <th>E-mail: </th>
+            <th><input title="Please enter your mail..." id="usr_mailField" type="text" value=""></th>
+        </tr>
+        <tr>
+            <th>Žanr - favorit: </th>
+            <th><select id="fbox" name="FilmoviŽanr" style="width: 170px; height: auto">
+                    <option value="none" selected disabled>Izaberi opciju</option>
+                    <option>Komedija</option>
+                    <option>Triler</option>
+                    <option>SF</option>
+                    <option>Horor</option>
+                    <option>Drama</option>
+                    <option>Povijesni</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><button onclick="processFormData()">Pošalji podatke</button> </th>
+        </tr>
+    </table>
+
+    &nbsp;
+
+    <div id="info_div">
+        <p>Ako niste ništa unijeli imat ćete poruku o grešci, a u suprotnom će vam se prikazati podaci na ovoj stranici.
+        </p>
+        <hr>
+    </div>
+
+    <p id="p_form_data">
+
+    </p>
+
+    <div id="date_div">
+
+    </div>
+
+</body>
+
+</html>

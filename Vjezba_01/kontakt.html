@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="graphics/favicon.ico">
+    <title> Kontakt </title>
+</head>
+
+<body>
+    <header>
+        <img src="graphics/SBZ_logo.png" alt="SBZ Logo">
+
+        <p>Sveučilišna banka Zadar</p>
+        <nav>
+            <a href="naslovna.html">Naslovna</a>
+            <a href="racun.html">Studentski račun</a>
+            <a href="#">Kartice</a>
+            <a href="#">Krediti</a>
+            <a href="#">Naknade</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <img src="https://images.pexels.com/photos/105003/pexels-photo-105003.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="naslovnica">
+    </header>
+
+    <main>
+        <!-- Forma -->
+        <h1>
+            Pošaljite nam mail
+        </h1>
+        <H1>gg</H1>
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Kontakt podaci</legend>
+                <label for="imeprezime">Ime i prezime</label>
+                <input type="text" name="ime" id="imeprezime" autocomplete="off">
+                <br>
+                <label for="mail"> E-mail </label>
+                <input type="email" name="mail" id="mail" autocomplete="on">
+                <br>
+                <label for="mob"> Mobitel</label>
+                <input type="tel" name="mobi" id="mob" placeholder="099 258 2615">
+                <!-- pattern="(0-9){3}/(0-9){3}-(0-9){3,4}" -->
+                <br>
+                <label for="kanal"> Željeni kanal komunikacije </label>
+                <select name="kontakt" id="kanal">
+                    <option value="email"> Email </option>
+                    <option value="mobitel"> Mobitel </option>
+                    <option value="posta"> Kućna adresa </option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Podaci o studiju</legend>
+                <label>Studij</label>
+                <input type="radio" name="studij" id="pd" value="preddipl">
+                <label for="pd">Preddiplomski</label>
+                <input type="radio" name="studij" id="d" value="dipl">
+                <label for="d">Diplomski</label>
+
+                <br>
+                <label for="red">Redovan student</label>
+                <input type="checkbox" name="redovan" id="red">
+                <br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Poruka</legend>
+                <label for="teme">Tema</label>
+                <select name="tema" id="teme">
+                    <option value="racuni">Računi</option>
+                    <option value="kartice">Kartice</option>
+                    <option value="krediti">Krediti</option>
+                    <option value="stipnedije">Stipendije</option>
+                    <option value="ostalo">Ostalo</option>
+                </select>
+                <br>
+
+
+                <br>
+                <textarea name="poruka" id="poruka" rows="10" cols="30"></textarea>
+
+            </fieldset>
+
+            <br>
+            <input type="reset" value="resetiraj">
+            <input type="submit" value="pošalji">
+
+
+
+        </form>
+    </main>
+
+    <br>
+
+
+    <footer>
+        <address>
+            Sveučilišna banka Zadar<br>
+            Mihovila Pavlinovića 1<br>
+            23000 Zadar<br>
+            Hrvatska
+        </address>
+    </footer>
+</body>
+
+</html>

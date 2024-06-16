@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple JS</title>
+    <style>
+        h1{color: brown;}
+        p{color: blue;}
+    </style>
+    <script>
+        function showRandomNumber() {
+            let rnum = Math.random();
+            alert(rnum);
+        }
+
+        function changeH1Title(){
+            let h1 = document.getElementById("h1_id");
+            h1.innerHTML = "Novi naslov prve razine - promjena!!!";
+        }
+        // 3, 5, 77, 8
+        function changeH1Style(){
+            let h1 = document.getElementsByTagName("h1")[0];
+            h1.style.color = "green";
+        }
+
+        function addParagraph() {
+            let par = document.createElement("p");
+            let node1 = document.createTextNode("Neki text u novom paragrafu - 1....");
+            let node2 = document.createTextNode("Novi dodani tekst u paragrafu!");
+            par.appendChild(node1);
+            par.appendChild(node2);
+
+            let divEl = document.getElementById("div_1");
+            divEl.appendChild(par);
+        }
+
+        function changePARStyle(evt) {
+
+            let idP = evt.currentTarget.pargh;
+            let par = document.getElementById(idP);
+            par.align = "justify";
+            par.style.color = "red";
+            par.style.fontFamily = "Arial, Helvetica, sans-serif";
+            par.style.fontSize = "14";
+
+        }
+
+    </script>
+</head>
+<body>
+<h1 id="h1_id"> Neki naslov prve razine</h1>
+<hr>
+
+<p id="p1">Neki tekst koji nam samo treba za ilustraciju.<br>
+
+    Opet neka rečenica - da imamo nešto teksta...<br>
+</p>
+
+<div id="div_1">
+
+</div>
+
+<script>showRandomNumber();</script>
+<script>changeH1Title();</script>
+<!--<script> changeH1Style();</script>-->
+<script>addParagraph();</script>
+<!--<script>changePARStyle("p1");</script>-->
+<script>document.pargh = "p1"; document.addEventListener("click", changePARStyle, false);</script>
+</body>
+</html>
